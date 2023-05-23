@@ -6,13 +6,22 @@
 //
 
 import UIKit
+import FirebaseAuth
+import SVProgressHUD
 
 class PostViewController: UIViewController {
+    
+    @IBOutlet weak var displayNameTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func handleChangeButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func handleLogoutButton(_ sender: Any) {
     }
     
 

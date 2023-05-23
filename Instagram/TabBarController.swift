@@ -46,7 +46,7 @@ class TabBarController: UITabBarController,UITabBarControllerDelegate {
         if Auth.auth().currentUser == nil {
             //ログインしていない時はLoginViewControllerにモーダル画面遷移する
             let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
-            self.present(loginViewController!, animated: true, completion: nil)
+            present(loginViewController!, animated: true, completion: nil)
         }
     }
 }
