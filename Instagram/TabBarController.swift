@@ -31,7 +31,7 @@ class TabBarController: UITabBarController,UITabBarControllerDelegate {
         if viewController is ImageSelectViewController {
             //ImageSelectViewCintrollerは、タブ切り替えではなくモーダル画面遷移する
             let imageSelectViewController = storyboard!.instantiateViewController(withIdentifier: "ImageSelect")
-            present(imageSelectViewController, animated: true)
+            self.present(imageSelectViewController, animated: true)
             return false
         } else {
             //その他のViewControllerは通常のタブ切り替えを実施
@@ -46,7 +46,7 @@ class TabBarController: UITabBarController,UITabBarControllerDelegate {
         if Auth.auth().currentUser == nil {
             //ログインしていない時はLoginViewControllerにモーダル画面遷移する
             let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
-            present(loginViewController!, animated: true, completion: nil)
+            self.present(loginViewController!, animated: true, completion: nil)
         }
     }
 }
