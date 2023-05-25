@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18020F6A2A1DAEB9009F6986 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18020F692A1DAEB9009F6986 /* Const.swift */; };
 		185B97C92A1B0D1A00AFB32A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B97C82A1B0D1A00AFB32A /* TabBarController.swift */; };
 		185B97CF2A1B2D2600AFB32A /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B97CE2A1B2D2600AFB32A /* ImageSelectViewController.swift */; };
 		185B97D12A1B353200AFB32A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B97D02A1B353200AFB32A /* SettingViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18020F692A1DAEB9009F6986 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		185B97C82A1B0D1A00AFB32A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		185B97CE2A1B2D2600AFB32A /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		185B97D02A1B353200AFB32A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				18F9DFDA2A1AF99100A9443C /* AppDelegate.swift */,
 				18F9DFDC2A1AF99100A9443C /* SceneDelegate.swift */,
+				18020F692A1DAEB9009F6986 /* Const.swift */,
 				185B97D42A1B358500AFB32A /* LoginViewController.swift */,
 				185B97CE2A1B2D2600AFB32A /* ImageSelectViewController.swift */,
 				185B97D62A1B35A800AFB32A /* HomeViewController.swift */,
@@ -233,6 +236,7 @@
 				185B97CF2A1B2D2600AFB32A /* ImageSelectViewController.swift in Sources */,
 				18F9DFDB2A1AF99100A9443C /* AppDelegate.swift in Sources */,
 				18F9DFDD2A1AF99100A9443C /* SceneDelegate.swift in Sources */,
+				18020F6A2A1DAEB9009F6986 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -249,9 +249,58 @@
                     <view key="view" contentMode="scaleToFill" id="zdS-pm-hbO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kJr-sC-CZi">
+                                <rect key="frame" x="10" y="79" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="LTH-0b-UBG"/>
+                                    <constraint firstAttribute="height" constant="120" id="wie-eq-ZAz"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5EE-5T-JBn">
+                                <rect key="frame" x="140" y="165" width="263" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKx-th-elN">
+                                <rect key="frame" x="10" y="219" width="373" height="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="投稿" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handlePostButton:" destination="AW2-Xe-wmC" eventType="touchUpInside" id="q3E-4u-Ckj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am8-v1-WMK">
+                                <rect key="frame" x="10" y="269" width="373" height="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="キャンセル" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleCancelButton:" destination="AW2-Xe-wmC" eventType="touchUpInside" id="VNw-qd-l05"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2vP-KT-lel"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="am8-v1-WMK" firstAttribute="centerX" secondItem="zdS-pm-hbO" secondAttribute="centerX" id="2Ty-Up-l7E"/>
+                            <constraint firstItem="fKx-th-elN" firstAttribute="leading" secondItem="2vP-KT-lel" secondAttribute="leading" constant="10" id="4al-3U-qz4"/>
+                            <constraint firstItem="2vP-KT-lel" firstAttribute="trailing" secondItem="am8-v1-WMK" secondAttribute="trailing" constant="10" id="4uK-HR-2f1"/>
+                            <constraint firstItem="kJr-sC-CZi" firstAttribute="leading" secondItem="2vP-KT-lel" secondAttribute="leading" constant="10" id="G9m-KI-O08"/>
+                            <constraint firstItem="fKx-th-elN" firstAttribute="top" secondItem="kJr-sC-CZi" secondAttribute="bottom" constant="20" id="LXl-yJ-O81"/>
+                            <constraint firstItem="kJr-sC-CZi" firstAttribute="top" secondItem="2vP-KT-lel" secondAttribute="top" constant="20" id="Oup-CA-1de"/>
+                            <constraint firstItem="am8-v1-WMK" firstAttribute="leading" secondItem="2vP-KT-lel" secondAttribute="leading" constant="10" id="XkA-fM-K9f"/>
+                            <constraint firstItem="5EE-5T-JBn" firstAttribute="leading" secondItem="kJr-sC-CZi" secondAttribute="trailing" constant="10" id="Z57-hu-fAT"/>
+                            <constraint firstItem="fKx-th-elN" firstAttribute="centerX" secondItem="zdS-pm-hbO" secondAttribute="centerX" id="ahD-oh-w0A"/>
+                            <constraint firstItem="5EE-5T-JBn" firstAttribute="bottom" secondItem="kJr-sC-CZi" secondAttribute="bottom" id="bW0-QO-Nhm"/>
+                            <constraint firstItem="5EE-5T-JBn" firstAttribute="trailing" secondItem="2vP-KT-lel" secondAttribute="trailing" constant="10" id="dvs-qh-wg8"/>
+                            <constraint firstItem="am8-v1-WMK" firstAttribute="top" secondItem="fKx-th-elN" secondAttribute="bottom" constant="10" id="mc4-rZ-7Qu"/>
+                            <constraint firstItem="2vP-KT-lel" firstAttribute="trailing" secondItem="fKx-th-elN" secondAttribute="trailing" constant="10" id="yuZ-wr-YHj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="kJr-sC-CZi" id="QSu-R1-peD"/>
+                        <outlet property="textField" destination="5EE-5T-JBn" id="muB-g5-1yP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5h-hw-zwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
