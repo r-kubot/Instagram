@@ -14,8 +14,11 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var likeLabel: UILabel!
+    @IBOutlet weak var commentTextField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var commentLabel: UILabel!
     
     // PostDataの内容をセルに表示
     func setPostData(_ postData: PostData) {
