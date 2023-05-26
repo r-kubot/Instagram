@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		18020F6A2A1DAEB9009F6986 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18020F692A1DAEB9009F6986 /* Const.swift */; };
+		181C554B2A1F04A000631D0F /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C554A2A1F04A000631D0F /* PostData.swift */; };
+		181C554E2A1F29C100631D0F /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C554C2A1F29C100631D0F /* PostTableViewCell.swift */; };
+		181C554F2A1F29C100631D0F /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181C554D2A1F29C100631D0F /* PostTableViewCell.xib */; };
 		185B97C92A1B0D1A00AFB32A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B97C82A1B0D1A00AFB32A /* TabBarController.swift */; };
 		185B97CF2A1B2D2600AFB32A /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B97CE2A1B2D2600AFB32A /* ImageSelectViewController.swift */; };
 		185B97D12A1B353200AFB32A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B97D02A1B353200AFB32A /* SettingViewController.swift */; };
@@ -25,6 +28,9 @@
 
 /* Begin PBXFileReference section */
 		18020F692A1DAEB9009F6986 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		181C554A2A1F04A000631D0F /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		181C554C2A1F29C100631D0F /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		181C554D2A1F29C100631D0F /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		185B97C82A1B0D1A00AFB32A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		185B97CE2A1B2D2600AFB32A /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		185B97D02A1B353200AFB32A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -80,12 +86,15 @@
 				18F9DFDA2A1AF99100A9443C /* AppDelegate.swift */,
 				18F9DFDC2A1AF99100A9443C /* SceneDelegate.swift */,
 				18020F692A1DAEB9009F6986 /* Const.swift */,
-				185B97D42A1B358500AFB32A /* LoginViewController.swift */,
-				185B97CE2A1B2D2600AFB32A /* ImageSelectViewController.swift */,
-				185B97D62A1B35A800AFB32A /* HomeViewController.swift */,
-				185B97D22A1B356100AFB32A /* PostViewController.swift */,
-				185B97D02A1B353200AFB32A /* SettingViewController.swift */,
 				185B97C82A1B0D1A00AFB32A /* TabBarController.swift */,
+				185B97D42A1B358500AFB32A /* LoginViewController.swift */,
+				185B97D62A1B35A800AFB32A /* HomeViewController.swift */,
+				185B97CE2A1B2D2600AFB32A /* ImageSelectViewController.swift */,
+				185B97D02A1B353200AFB32A /* SettingViewController.swift */,
+				181C554A2A1F04A000631D0F /* PostData.swift */,
+				185B97D22A1B356100AFB32A /* PostViewController.swift */,
+				181C554C2A1F29C100631D0F /* PostTableViewCell.swift */,
+				181C554D2A1F29C100631D0F /* PostTableViewCell.xib */,
 				18F9DFE02A1AF99100A9443C /* Main.storyboard */,
 				18F9DFE32A1AF99200A9443C /* Assets.xcassets */,
 				18F9DFE52A1AF99200A9443C /* LaunchScreen.storyboard */,
@@ -173,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F9DFE72A1AF99200A9443C /* LaunchScreen.storyboard in Resources */,
+				181C554F2A1F29C100631D0F /* PostTableViewCell.xib in Resources */,
 				185B97D92A1B553600AFB32A /* GoogleService-Info.plist in Resources */,
 				18F9DFE42A1AF99200A9443C /* Assets.xcassets in Resources */,
 				18F9DFE22A1AF99100A9443C /* Main.storyboard in Resources */,
@@ -228,11 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181C554E2A1F29C100631D0F /* PostTableViewCell.swift in Sources */,
 				185B97D32A1B356100AFB32A /* PostViewController.swift in Sources */,
 				185B97C92A1B0D1A00AFB32A /* TabBarController.swift in Sources */,
 				185B97D12A1B353200AFB32A /* SettingViewController.swift in Sources */,
 				185B97D72A1B35A800AFB32A /* HomeViewController.swift in Sources */,
 				185B97D52A1B358500AFB32A /* LoginViewController.swift in Sources */,
+				181C554B2A1F04A000631D0F /* PostData.swift in Sources */,
 				185B97CF2A1B2D2600AFB32A /* ImageSelectViewController.swift in Sources */,
 				18F9DFDB2A1AF99100A9443C /* AppDelegate.swift in Sources */,
 				18F9DFDD2A1AF99100A9443C /* SceneDelegate.swift in Sources */,
