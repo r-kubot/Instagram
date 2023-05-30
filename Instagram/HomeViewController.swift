@@ -131,7 +131,5 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // commentに更新データを書き込む
         let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
         postRef.updateData(["comment": updateCommentValue])
-        
-        cell.commentTextField.text = ""
     }
 }
