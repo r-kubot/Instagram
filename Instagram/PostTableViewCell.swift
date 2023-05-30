@@ -34,7 +34,6 @@ class PostTableViewCell: UITableViewCell {
         let comment = postData.comment
         let str = comment.joined(separator: "\n")
         self.commentLabel.text = str
-        print(comment)
         
         // 日時の表示
         self.dateLabel.text = postData.date
